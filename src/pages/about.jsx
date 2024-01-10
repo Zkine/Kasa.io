@@ -1,6 +1,7 @@
 import Collapse from "../components/collapse";
 import ImgAbout from "../assets/ImgAbout.png";
 import ImgAboutMobile from "../assets/ImgAboutMobile.png";
+import Banner from "../components/banner";
 import "../styles/main.scss";
 
 function About() {
@@ -24,7 +25,7 @@ function About() {
 
   return (
     <main>
-      <section className="conteneurabout">
+      <Banner className="conteneurabout">
         <div>
           <picture className="conteneurabout__conteneurimg">
             <source media="(max-width: 375px)" srcSet={ImgAboutMobile} />
@@ -35,7 +36,7 @@ function About() {
             />
           </picture>
         </div>
-      </section>
+      </Banner>
       <section className="conteneuraboutcollapse">
         <Collapse titre={titre.fiabilité} description={description.fiabilité} />
         <Collapse titre={titre.respect} description={description.respect} />

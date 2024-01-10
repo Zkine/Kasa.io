@@ -1,5 +1,6 @@
 import ImgHome from "../assets/ImgHome.png";
 import JsnData from "../data/logements.json";
+import Banner from "../components/banner";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "../styles/main.scss";
@@ -12,7 +13,7 @@ function Home() {
   return (
     <main>
       <article>
-        <section>
+        <Banner>
           <div className="styletitre">
             <h1 className="styletitre__h1">
               Chez vous, <br className="styletitre__br" />
@@ -20,7 +21,7 @@ function Home() {
             </h1>
             <img src={ImgHome} alt="la montagne" className="styletitre__img" />
           </div>
-        </section>
+        </Banner>
         <section className="logementsection">
           <div className="logementsection__logement">
             {JsnData.map((item) => (
