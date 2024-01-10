@@ -1,0 +1,96 @@
+.conteneurheader {
+    width: 65.713%;
+    height: 68px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    &__ul {
+        list-style: none;
+        display: flex;
+    }
+
+    &--accueil {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $orange;
+        text-decoration: underline;
+    }
+
+    &--propos {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $orange;
+        white-space: nowrap;
+        margin-left: 65px;
+        text-decoration: underline;
+    }
+
+    &--accueilnonsouligne {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $orange;
+        text-decoration: none;
+    }
+
+    &--proposnonsouligne {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $orange;
+        white-space: nowrap;
+        margin-left: 65px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .conteneurheader {
+        width: 93.316%;
+        margin-top: 20px;
+
+        &--propos {
+            margin-left: 10px;
+        }
+
+        &--proposnonsouligne {
+            margin-left: 10px;
+        }
+
+        &__img {
+            height: 45px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .conteneurheader {
+        height: 47px;
+
+        &--accueil {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &--propos {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        &__img {
+            width: 43.28%;
+        }
+
+        &--accueilnonsouligne {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &--proposnonsouligne {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.stylefooter {
+  @include flexcenter;
+  background-color: #000000;
+  width: 76.312%;
+  height: 209px;
+  flex-direction: column-reverse;
+  position: relative;
+  margin: auto;
+
+  &__p {
+    color: $blanc;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .stylefooter {
+    width: 100%;
+  }
+}
