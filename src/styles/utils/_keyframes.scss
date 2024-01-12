@@ -1,0 +1,43 @@
+@keyframes animation_arrow_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-180deg)
+    }
+}
+
+@keyframes animation_arrow_init {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes animation_collapse_open {
+    0% {
+        padding: 0 4% 0 4%;
+        // height: 0;
+    }
+
+    100% {
+        padding: 5% 4% 10% 4%;
+        // height: 100%;
+    }
+}
+
+@keyframes animation_collapse_close {
+    0% {
+        padding: 5% 4% 10% 4%;
+        // height: 100%;
+    }
+
+    100% {
+        padding: 0 4% 0 4%;
+        // height: 0;
+    }
+}

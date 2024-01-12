@@ -53,15 +53,34 @@
     margin-bottom: 20px;
     margin-top: -27px;
     font-size: 24px;
+    height: 0;
     max-height: 100%;
-    padding: 5% 4% 10% 4%;
+    overflow: hidden;
+    // animation: 300ms animation_collapse_open Ease-out both;
+    // transform: translateY(100%);
+    // transition: transform 1000ms;
   }
 }
 
-.rotate {
-  transform: rotate(180deg);
+.collapse__paragraphe {
+  margin: 0;
 }
 
+.rotate {
+  animation: 300ms animation_arrow_rotate Ease-out both;
+}
+
+.norotate {
+  animation: 300ms animation_arrow_init Ease-out both;
+}
+
+.collapse_open {
+  animation: 300ms animation_collapse_open Ease-out both
+}
+
+.collapse_close {
+  animation: 300ms animation_collapse_close Ease-out both
+}
 
 @media screen and (max-width: 868px) {
 

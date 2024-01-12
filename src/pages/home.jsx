@@ -13,14 +13,14 @@ function Home() {
   return (
     <main>
       <article>
-        <Banner>
-          <div className="styletitre">
-            <h1 className="styletitre__h1">
-              Chez vous, <br className="styletitre__br" />
-              partout et ailleurs
-            </h1>
-            <img src={ImgHome} alt="la montagne" className="styletitre__img" />
-          </div>
+        <Banner src={ImgHome} alt="la montagne">
+          {/* <div > */}
+          <h1 className="styletitre__h1">
+            Chez vous, <br className="styletitre__br" />
+            partout et ailleurs
+          </h1>
+          {/* <img src={ImgHome} alt="la montagne" className="styletitre__img" /> */}
+          {/* </div> */}
         </Banner>
         <section className="logementsection">
           <div className="logementsection__logement">

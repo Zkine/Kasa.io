@@ -1,6 +1,5 @@
 import Collapse from "../components/collapse";
 import ImgAbout from "../assets/ImgAbout.png";
-import ImgAboutMobile from "../assets/ImgAboutMobile.png";
 import Banner from "../components/banner";
 import "../styles/main.scss";
 
@@ -25,17 +24,14 @@ function About() {
 
   return (
     <main>
-      <Banner className="conteneurabout">
-        <div>
-          <picture className="conteneurabout__conteneurimg">
-            <source media="(max-width: 375px)" srcSet={ImgAboutMobile} />
-            <img
-              src={ImgAbout}
-              alt="Très belle montagne"
-              className="conteneurabout__img"
-            />
-          </picture>
-        </div>
+      <Banner src={ImgAbout} alt="Très belle montagne">
+        {/* <div className="conteneurabout__conteneurimg"> */}
+        {/* <img
+          src={ImgAbout}
+          alt="Très belle montagne"
+          className="conteneurabout__img"
+        /> */}
+        {/* </div> */}
       </Banner>
       <section className="conteneuraboutcollapse">
         <Collapse titre={titre.fiabilité} description={description.fiabilité} />
