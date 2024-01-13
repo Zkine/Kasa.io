@@ -67,7 +67,11 @@ function Logement() {
           <div className="collapsehousing__conteneurdescription">
             <Collapse
               titre={titre.description}
-              description={logementResult["description"]}
+              description={
+                <p className="collapsehousing__p">
+                  {logementResult["description"]}
+                </p>
+              }
               className="collapsehousing__el"
             />
           </div>

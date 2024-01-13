@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/main.scss";
 
 function Collapse({ titre, description }) {
+  const ref = useRef(null);
   const [Open, setIsOpen] = useState(false);
   const [SelectedTitle, setIsSelectedTitle] = useState("");
+  const [contentHeight, setIsContentHeight] = useState(0);
+
+  useEffect(() => {
+    if (ref.current) {
+      setIsContentHeight(ref.current.clientHeight);
+    }
+  }, [description]);
 
   function selected(e) {
     setIsOpen(!Open);
@@ -38,29 +46,27 @@ function Collapse({ titre, description }) {
           <IoIosArrowUp />
         </span>
       </button>
-      {/* {Open && ( */}
       <div
-        className={[
-          SelectedTitle === ""
-            ? "conteneurcollapse__description"
-            : SelectedTitle === "Fiabilité" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : SelectedTitle === "Respect" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : SelectedTitle === "Service" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : SelectedTitle === "Sécurité" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : SelectedTitle === "description" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : SelectedTitle === "equipements" && Open
-            ? "conteneurcollapse__description collapse_open"
-            : "conteneurcollapse__description collapse_close",
-        ]}
+        className={"conteneurcollapse__description"}
+        style={{
+          height:
+            SelectedTitle === "Fiabilité" && Open
+              ? contentHeight + 40
+              : SelectedTitle === "Respect" && Open
+              ? contentHeight + 40
+              : SelectedTitle === "Service" && Open
+              ? contentHeight + 40
+              : SelectedTitle === "Sécurité" && Open
+              ? contentHeight + 40
+              : SelectedTitle === "description" && Open
+              ? contentHeight + 40
+              : SelectedTitle === "equipements" && Open
+              ? contentHeight + 40
+              : 0,
+        }}
       >
-        <p className="collapse__paragraphe">{description}</p>
+        <div ref={ref}>{description}</div>
       </div>
-      {/* )} */}
     </div>
   );
 }

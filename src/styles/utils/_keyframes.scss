@@ -18,26 +18,20 @@
     }
 }
 
-@keyframes animation_collapse_open {
-    0% {
-        padding: 0 4% 0 4%;
-        // height: 0;
-    }
+// @keyframes animation_collapse_open {
+//     0% {
+//         max-height: 0;
+//     }
 
-    100% {
-        padding: 5% 4% 10% 4%;
-        // height: 100%;
-    }
-}
+//     100% {
+//         max-height: 100%;
+//     }
+// }
 
-@keyframes animation_collapse_close {
-    0% {
-        padding: 5% 4% 10% 4%;
-        // height: 100%;
-    }
+// @keyframes animation_collapse_close {
+//     0% {}
 
-    100% {
-        padding: 0 4% 0 4%;
-        // height: 0;
-    }
-}
+//     100% {
+//         max-height: 0;
+//     }
+// }

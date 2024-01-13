@@ -1,13 +1,13 @@
-.conteneurtitre {
-  width: 82.50%;
-  height: 47px;
-  background-color: $orange;
-  border-radius: 5px;
-}
-
 .conteneuraboutcollapse {
   width: 65.713%;
-  margin: auto;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60%
+}
+
+.collapse_paragraphe {
+  margin: 20px 15px;
 }
 
 @media screen and (max-width: 868px) {

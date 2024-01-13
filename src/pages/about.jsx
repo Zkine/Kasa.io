@@ -34,10 +34,30 @@ function About() {
         {/* </div> */}
       </Banner>
       <section className="conteneuraboutcollapse">
-        <Collapse titre={titre.fiabilité} description={description.fiabilité} />
-        <Collapse titre={titre.respect} description={description.respect} />
-        <Collapse titre={titre.service} description={description.service} />
-        <Collapse titre={titre.sécurité} description={description.sécurité} />
+        <Collapse
+          titre={titre.fiabilité}
+          description={
+            <p className="collapse_paragraphe">{description.fiabilité}</p>
+          }
+        />
+        <Collapse
+          titre={titre.respect}
+          description={
+            <p className="collapse_paragraphe">{description.respect}</p>
+          }
+        />
+        <Collapse
+          titre={titre.service}
+          description={
+            <p className="collapse_paragraphe">{description.service}</p>
+          }
+        />
+        <Collapse
+          titre={titre.sécurité}
+          description={
+            <p className="collapse_paragraphe">{description.sécurité}</p>
+          }
+        />
       </section>
     </main>
   );
