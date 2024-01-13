@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/main.scss";
@@ -9,13 +9,8 @@ function Collapse({ titre, description }) {
   const [SelectedTitle, setIsSelectedTitle] = useState("");
   const [contentHeight, setIsContentHeight] = useState(0);
 
-  useEffect(() => {
-    if (ref.current) {
-      setIsContentHeight(ref.current.clientHeight);
-    }
-  }, [description]);
-
   function selected(e) {
+    setIsContentHeight(ref.current.clientHeight);
     setIsOpen(!Open);
     setIsSelectedTitle(e.target.children[0].textContent);
   }
