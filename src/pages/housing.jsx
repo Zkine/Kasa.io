@@ -28,7 +28,7 @@ function Logement() {
 
   return (
     <main>
-      <article>
+      <article className="housing_article">
         <Slideshow logementFind={logementResult} />
         <section className="stylehousing">
           <div className="stylehousing__conteneur">

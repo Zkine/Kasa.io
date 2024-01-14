@@ -36,7 +36,6 @@ function About() {
           />
         </section>
       ))}
-      ;
     </main>
   );
 }

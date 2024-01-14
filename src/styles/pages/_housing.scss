@@ -1,3 +1,7 @@
+.housing_article {
+    margin-bottom: 20px;
+}
+
 .stylehousing {
     display: flex;
     justify-content: space-between;
@@ -111,7 +115,7 @@
     list-style: none;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 912px) {
 
     .stylehousing {
         width: 93.316%;

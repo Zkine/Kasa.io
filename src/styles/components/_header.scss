@@ -45,9 +45,14 @@
     }
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 912px) {
     .conteneurheader {
         width: 93.316%;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .conteneurheader {
         margin-top: 20px;
 
         &--propos {

@@ -10,9 +10,9 @@ function Collapse({ titre, description }) {
   const [contentHeight, setIsContentHeight] = useState(0);
 
   function selected(e) {
-    setIsContentHeight(ref.current.clientHeight);
     setIsOpen(!Open);
     setIsSelectedTitle(e.target.children[0].textContent);
+    setIsContentHeight(ref.current.clientHeight);
   }
 
   return (
@@ -35,7 +35,7 @@ function Collapse({ titre, description }) {
               ? "conteneurcollapse--icone rotate"
               : SelectedTitle === "equipements" && Open
               ? "conteneurcollapse--icone rotate"
-              : "conteneurcollapse--icone norotate",
+              : "conteneurcollapse--icone down_rotate",
           ]}
         >
           <IoIosArrowUp />
@@ -46,17 +46,17 @@ function Collapse({ titre, description }) {
         style={{
           height:
             SelectedTitle === "Fiabilité" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : SelectedTitle === "Respect" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : SelectedTitle === "Service" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : SelectedTitle === "Sécurité" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : SelectedTitle === "description" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : SelectedTitle === "equipements" && Open
-              ? contentHeight + 40
+              ? contentHeight + 35
               : 0,
         }}
       >

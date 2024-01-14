@@ -55,7 +55,7 @@
     margin-top: -27px;
     font-size: 18px;
     font-weight: 400;
-    transition: height 300ms;
+    transition: height 300ms linear;
   }
 }
 
@@ -63,11 +63,11 @@
   animation: 300ms animation_arrow_rotate Ease-out both;
 }
 
-.norotate {
+.down_rotate {
   animation: 300ms animation_arrow_init Ease-out both;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 912px) {
 
   .conteneurcollapse__button {
     width: 95%;
@@ -95,7 +95,6 @@
       &__description {
         width: 89.33%;
         font-size: 12px;
-        // padding: 8% 5% 10% 5%;
       }
     }
   }

@@ -3,6 +3,7 @@
     height: 24.267vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
 
     &__img {
@@ -11,5 +12,50 @@
         filter: brightness(60%);
         width: 65.713%;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        margin: 65px;
+
+        &__img {
+            width: 93.316%;
+
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .banner {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .banner {
+        &__img {
+            height: 190px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .banner {
+        height: 15.267vh;
+        margin-top: 0px;
+
+        &__img {
+            height: 111px;
+            border-radius: 10px;
+            width: 93.315%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        margin-top: 22px;
     }
 }

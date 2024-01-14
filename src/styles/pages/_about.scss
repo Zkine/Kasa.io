@@ -10,26 +10,17 @@
   margin: 20px 15px;
 }
 
-@media screen and (max-width: 868px) {
-  .conteneurabout__conteneurimg {
-    height: 89.33%;
-  }
-
-  .conteneurabout__img {
-    width: 93.316%;
-  }
+@media screen and (max-width: 912px) {
 
   .conteneuraboutcollapse {
     width: 89.401%;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .conteneurabout__conteneurimg {
-    margin: 15px 0px;
-  }
-
+@media screen and (max-width: 430px) {
   .conteneuraboutcollapse {
     width: 100%;
+    margin: 0px auto 20px;
+    ;
   }
 }
