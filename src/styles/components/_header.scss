@@ -6,6 +6,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 40px;
+    align-items: center;
 
     &__ul {
         list-style: none;
@@ -70,13 +71,13 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 431px) {
     .conteneurheader {
         height: 47px;
+        text-transform: uppercase;
 
         &--accueil {
             font-size: 12px;
-            text-transform: uppercase;
         }
 
         &--propos {
@@ -90,12 +91,17 @@
 
         &--accueilnonsouligne {
             font-size: 12px;
-            text-transform: uppercase;
         }
 
         &--proposnonsouligne {
             font-size: 12px;
             margin-left: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .conteneurheader__ul {
+        padding-left: 0;
     }
 }
