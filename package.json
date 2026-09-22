@@ -2,6 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zkine.github.io/Kasa.io",
   "dependencies": {
     "@gaearon/react-collapsed": "^3.3.0-patched-react-18",
     "@testing-library/jest-dom": "^5.16.5",
