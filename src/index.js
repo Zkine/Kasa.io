@@ -1,20 +1,20 @@
 import React from "react";
-import Normalize from "react-normalize";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./components/header";
+import Normalize from "react-normalize";
+import { HashRouter } from "react-router-dom";
 import Footer from "./components/footer";
+import Header from "./components/header";
 import RouteKasa from "./components/routeKasa";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <Normalize />
       <Header />
       <RouteKasa />
       <Footer />
-    </Router>
-  </React.StrictMode>
+    </HashRouter>
+  </React.StrictMode>,
 );
